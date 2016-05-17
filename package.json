@@ -1,0 +1,39 @@
+{
+  "name": "react-basic-starter",
+  "version": "0.0.1",
+  "description": "The very very basic reactjs starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.dev.config.js --content-base ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeinfree/react-basic-starter.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Whien_Liou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madeinfree/react-basic-starter/issues"
+  },
+  "homepage": "https://github.com/madeinfree/react-basic-starter#readme",
+  "dependencies": {
+    "react": "^15.0.2",
+    "react-bootstrap": "^0.29.4",
+    "react-dom": "^15.0.2",
+    "react-router": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015-node6": "^0.2.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
