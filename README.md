@@ -1,3 +1,6 @@
+# Demo
+![React Basic Starter](http://i.imgur.com/Gu7lMLU.png)
+
 # React Basic Starter
 * Node 6.0.0v
 * React 15.0.2v
@@ -20,9 +23,6 @@ well done !
 
 # TODO
 * server render
-
-# Demo
-![aa](http://i.imgur.com/Gu7lMLU.png)
 
 # License
 MIT
