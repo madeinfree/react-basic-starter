@@ -8,7 +8,7 @@
 # Why React Basic Starter
 It very very easily and basic for web developer to start the test project, and have the clearly structure to use it.
 
-# installation
+# Installation
 ```
 git clone https://github.com/madeinfree/react-basic-starter.git
 npm i
