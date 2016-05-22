@@ -6,7 +6,6 @@ module.exports = {
     'webpack-dev-server/client?http://0.0.0.0:8080',
     'webpack/hot/only-dev-server',
     './src/index.react.js'
-    // app: [ './src/index.react.js' ]
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
