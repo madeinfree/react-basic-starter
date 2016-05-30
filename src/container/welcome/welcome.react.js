@@ -13,7 +13,7 @@ const Welcome = () => {
       <p className='text-center'>This is the reactjs basic structure starter for user initial the project.</p>
       <p className='text-center'>When success, you can see this [Home] page.</p>
       <p className='text-center'><b>Provide</b></p>
-      <p className='text-center'>React, ReactRouter, ReactBootstrap</p>
+      <p className='text-center'>React, ReactRouter, ReactBootstrap, Redux</p>
       <p className='text-center'>Webpack-dev-server</p>
     </Jumbotron>
   );

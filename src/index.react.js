@@ -1,27 +1,30 @@
-//React core
+// React core
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-//React Router
+// React Router
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
-//Components
-import Common from './component/common/common.react';
-import Welcome from './component/welcome/welcome.react';
-import Home from './component/home/home.react';
+// Container
+import Common from './container/common/common.react';
+import Welcome from './container/welcome/welcome.react';
+import Home from './container/home/home.react';
 
-export default class App extends Component {
-  render() {
+// Redux
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
 
-    return (
-      <Router history={ browserHistory }>
-        <Route path="/" component={ Common }>
-          <IndexRoute component={ Welcome } />
-          <Route path="home" component={ Home } />
-        </Route>
-      </Router>
-    );
-  }
-};
+const store = configureStore();
+
+const App = () => (
+  <Provider store={ store }>
+    <Router history={ browserHistory }>
+      <Route path="/" component={ Common }>
+        <IndexRoute component={ Welcome } />
+        <Route path="home" component={ Home } />
+      </Route>
+    </Router>
+  </Provider>
+);
 
 render(<App />, document.getElementById('app'));

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import { connect } from 'react-redux';
+
 import {
   Jumbotron,
   Button
 } from 'react-bootstrap';
 
-const Home = () => {
+const Home = (props) => {
 
   const jumbotronInstance = (
     <Jumbotron>
@@ -14,14 +16,26 @@ const Home = () => {
       <p className='text-center'>If you have any problem</p>
       <p className='text-center'><b>Feel free to discuss with me.</b></p>
       <p className='text-center'>or you can <a href='https://github.com/madeinfree/react-basic-starter/issues'>Here</a> to tell me :>.</p>
+      < hr/>
+      <p className='text-center'>TODOS</p>
+      <p className='text-center'>Name: { props.todos.name }, Gender: { props.todos.gender }</p>
     </Jumbotron>
   );
 
   return (
     <div>
       { jumbotronInstance }
+      { console.log(props) }
     </div>
   )
 }
 
-export default Home;
+const mapStateToProps = (state) => (
+  {
+    todos: state.todos
+  }
+)
+
+export default connect(
+  mapStateToProps
+)(Home);
