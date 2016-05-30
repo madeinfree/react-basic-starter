@@ -3,8 +3,11 @@
 
 # React Basic Starter
 * Node 6.0.0v
-* React 15.0.2v
-* ReactRouter 2.4.0v
+* React 15.1.0v
+* ReactDom 15.1.0v
+* ReactRouter 2.4.1v
+* Redux 3.5.2v
+* ReactRedux 4.4.5v
 * React-Hot-Loader 1.3.0v
 * ES6 Support
 * Only client side render now
