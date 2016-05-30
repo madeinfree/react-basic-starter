@@ -16,19 +16,15 @@ import configureStore from './store/configureStore';
 
 const store = configureStore();
 
-export default class App extends Component {
-  render() {
-    return (
-      <Provider store={ store }>
-        <Router history={ browserHistory }>
-          <Route path="/" component={ Common }>
-            <IndexRoute component={ Welcome } />
-            <Route path="home" component={ Home } />
-          </Route>
-        </Router>
-      </Provider>
-    );
-  }
-};
+const App = () => (
+  <Provider store={ store }>
+    <Router history={ browserHistory }>
+      <Route path="/" component={ Common }>
+        <IndexRoute component={ Welcome } />
+        <Route path="home" component={ Home } />
+      </Route>
+    </Router>
+  </Provider>
+);
 
 render(<App />, document.getElementById('app'));
