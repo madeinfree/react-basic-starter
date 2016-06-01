@@ -1,9 +1,9 @@
 // React core
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 
 // React Router
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 // Container
 import Common from './container/common/common.react';
@@ -19,9 +19,9 @@ const store = configureStore();
 const App = () => (
   <Provider store={ store }>
     <Router history={ browserHistory }>
-      <Route path="/" component={ Common }>
+      <Route path='/' component={ Common }>
         <IndexRoute component={ Welcome } />
-        <Route path="home" component={ Home } />
+        <Route path='home' component={ Home } />
       </Route>
     </Router>
   </Provider>

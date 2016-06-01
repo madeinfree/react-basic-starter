@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import {
-  Jumbotron,
-  Button
+  Jumbotron
 } from 'react-bootstrap';
 
 const Welcome = () => {
-
   const jumbotronInstance = (
     <Jumbotron>
       <h1 className='text-center'>Welcome Reactjs Basic Starter</h1>
@@ -22,7 +20,7 @@ const Welcome = () => {
     <div>
       { jumbotronInstance }
     </div>
-  )
-}
+  );
+};
 
 export default Welcome;
