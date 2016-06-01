@@ -7,11 +7,11 @@ const styles = {
   padding: 20
 };
 
-const Common = () => (
+const Common = (props) => (
   <div>
     <Header />
     <div style={ styles }>
-      { this.props.children }
+      { props.children }
     </div>
     <Footer />
   </div>
