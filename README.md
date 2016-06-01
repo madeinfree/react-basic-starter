@@ -9,6 +9,7 @@
 * Redux 3.5.2v
 * ReactRedux 4.4.5v
 * React-Hot-Loader 1.3.0v
+* eslint 2.11.1v
 * ES6 Support
 * Only client side render now
 

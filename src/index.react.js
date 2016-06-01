@@ -14,6 +14,8 @@ import Home from './container/home/home.react';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 
+import './lib/bootstrap/dist/bootstrap.min.css';
+
 const store = configureStore();
 
 const App = () => (
