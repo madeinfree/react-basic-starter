@@ -2,9 +2,10 @@
 
 > 2016-07-28
 
-- **Migrate**: webpack.dev.config migrate to server config file.
-- **Upgrade**: React Bootstrap upgrade v0.3.0-rc2 to v0.3.0.
-- **Other**: start script modified (use node_modules babel-cli not global babel script).
+- **Migrate**: webpack.dev.config migrate to server config file
+- **Upgrade**: React Bootstrap upgrade v0.3.0-rc2 to v0.3.0
+- **Upgrade**: React Router upgrade v2.4.1 to v2.6.0
+- **Other**: start script modified (use node_modules babel-cli not global babel script)
 
 
 ## v0.3.0
