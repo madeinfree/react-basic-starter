@@ -18,14 +18,18 @@ import './lib/bootstrap/dist/bootstrap.min.css'
 
 const store = configureStore()
 
+const routes = (
+  <Route path='/' component={ Common }>
+    <IndexRoute component={ Welcome } />
+    <Route path='home' component={ Home } />
+  </Route>
+)
+
 const App = () => (
   <Provider store={ store }>
-    <Router history={ browserHistory }>
-      <Route path='/' component={ Common }>
-        <IndexRoute component={ Welcome } />
-        <Route path='home' component={ Home } />
-      </Route>
-    </Router>
+    <Router
+      history={ browserHistory }
+      routes={ routes } />
   </Provider>
 )
 
