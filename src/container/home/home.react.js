@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
 import {
   Jumbotron
-} from 'react-bootstrap';
+} from 'react-bootstrap'
 
 const Home = (props) => {
   const jumbotronInstance = (
@@ -18,21 +18,21 @@ const Home = (props) => {
       <p className='text-center'>TODOS</p>
       <p className='text-center'>Name: { props.todos.name }, Gender: { props.todos.gender }</p>
     </Jumbotron>
-  );
+  )
 
   return (
     <div>
       { jumbotronInstance }
     </div>
-  );
-};
+  )
+}
 
 const mapStateToProps = (state) => (
   {
     todos: state.todos
   }
-);
+)
 
 export default connect(
   mapStateToProps
-)(Home);
+)(Home)

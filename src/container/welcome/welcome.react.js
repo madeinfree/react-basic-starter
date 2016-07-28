@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 import {
   Jumbotron
-} from 'react-bootstrap';
+} from 'react-bootstrap'
 
 const Welcome = () => {
   const jumbotronInstance = (
@@ -14,13 +14,13 @@ const Welcome = () => {
       <p className='text-center'>React, ReactRouter, ReactBootstrap, Redux</p>
       <p className='text-center'>Webpack-dev-server</p>
     </Jumbotron>
-  );
+  )
 
   return (
     <div>
       { jumbotronInstance }
     </div>
-  );
-};
+  )
+}
 
-export default Welcome;
+export default Welcome

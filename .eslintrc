@@ -60,10 +60,11 @@
     "id-length": 0,
     "no-unused-expressions": 0,
     "no-param-reassign": 0,
-    max-len: ["error", 200,
+    "max-len": ["error", 200,
     {
       "ignoreUrls": true,
       "ignoreComments": true
-    }]
+    }],
+    "semi": 0
   }
 }

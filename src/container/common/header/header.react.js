@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import { Link, browserHistory } from 'react-router';
+import { Link, browserHistory } from 'react-router'
 
 import {
   Navbar,
   Nav,
   NavItem
-} from 'react-bootstrap';
+} from 'react-bootstrap'
 
 const Header = () => (
   <div>
@@ -19,7 +19,7 @@ const Header = () => (
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
-          <NavItem key={ 1 } onClick={ () => { browserHistory.push('home'); } }>Home</NavItem>
+          <NavItem key={ 1 } onClick={ () => { browserHistory.push('home') } }>Home</NavItem>
         </Nav>
         <Nav pullRight>
           <NavItem eventKey={ 1 } href='#'>Link Right</NavItem>
@@ -27,6 +27,6 @@ const Header = () => (
       </Navbar.Collapse>
     </Navbar>
   </div>
-);
+)
 
-export default Header;
+export default Header

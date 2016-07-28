@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import Header from './header/header.react';
-import Footer from './footer/footer.react';
+import Header from './header/header.react'
+import Footer from './footer/footer.react'
 
 const styles = {
   padding: 20
-};
+}
 
 const Common = (props) => (
   <div>
@@ -15,6 +15,6 @@ const Common = (props) => (
     </div>
     <Footer />
   </div>
-);
+)
 
-export default Common;
+export default Common

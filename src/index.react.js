@@ -1,22 +1,22 @@
 // React core
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 
 // React Router
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 // Container
-import Common from './container/common/common.react';
-import Welcome from './container/welcome/welcome.react';
-import Home from './container/home/home.react';
+import Common from './container/common/common.react'
+import Welcome from './container/welcome/welcome.react'
+import Home from './container/home/home.react'
 
 // Redux
-import { Provider } from 'react-redux';
-import configureStore from './store/configureStore';
+import { Provider } from 'react-redux'
+import configureStore from './store/configureStore'
 
-import './lib/bootstrap/dist/bootstrap.min.css';
+import './lib/bootstrap/dist/bootstrap.min.css'
 
-const store = configureStore();
+const store = configureStore()
 
 const App = () => (
   <Provider store={ store }>
@@ -27,6 +27,6 @@ const App = () => (
       </Route>
     </Router>
   </Provider>
-);
+)
 
-render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'))

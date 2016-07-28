@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const styles = {
   display: 'flex',
@@ -11,12 +11,12 @@ const styles = {
   textAlign: 'center',
   alignItems: 'center',
   justifyContent: 'center'
-};
+}
 
 const Footer = () => (
   <div style={ styles }>
     Footer Here
   </div>
-);
+)
 
-export default Footer;
+export default Footer
