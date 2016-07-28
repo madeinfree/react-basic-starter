@@ -5,8 +5,8 @@
 * Node 6.0.0v
 * React 15.2.1v
 * ReactDom 15.2.1v
-* ReactRouter 2.4.1v
-* ReactBootstrap: 0.30.0-rc.2v
+* ReactRouter 2.6.0v
+* ReactBootstrap: 0.30.0
 * Redux 3.5.2v
 * ReactRedux 4.4.5v
 * React-Hot-Loader 1.3.0v
