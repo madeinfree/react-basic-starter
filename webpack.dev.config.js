@@ -10,10 +10,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: 'build'
+    publicPath: '/build/'
   },
   debug: true,
-  devtool: 'eval-source-map',
+  devtool: '#eval-source-map',
   resolve: {
     extensions: [ '', '.js', '.jsx' ]
   },
