@@ -3,7 +3,8 @@
 > 2016-07-28
 
 - **Migrate**: webpack.dev.config migrate to server config file.
-- **Other**: start script modified (use node_modules babel-cli not global babel script)
+- **Upgrade**: React Bootstrap upgrade v0.3.0-rc2 to v0.3.0.
+- **Other**: start script modified (use node_modules babel-cli not global babel script).
 
 
 ## v0.3.0
