@@ -12,7 +12,7 @@
 * React-Hot-Loader 1.3.0v
 * eslint 2.11.1v
 * ES6 Support
-* Only client side render now
+* Server-side render
 
 # Why React Basic Starter
 The lightweight react start, help you to start your project quickly.
