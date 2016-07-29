@@ -4,6 +4,7 @@
 
 - **Improvement**: Improvement initial sample code, ([redux-action])
 - **Feature**: Now have server-side render, ([webpack-server]) relation issue ([#3])
+- **Feature**: Add Redux Logger
 - **BugFix**: React Router has `keep getting an annoying warning` issue, ([fixed-router-issue])
 
 [fixed-router-issue]: https://github.com/madeinfree/react-basic-starter/commit/88c82f548b57b6efd0f22b3870905a487a68c0d2
