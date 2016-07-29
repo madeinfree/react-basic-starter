@@ -1,12 +1,15 @@
 # Demo
 ![React Basic Starter](http://i.imgur.com/Gu7lMLU.png)
 
+# Why React Basic Starter
+The lightweight react start, help you to start your project quickly.
+
 # React Basic Starter
 * Node 6.0.0v
 * React 15.2.1v
 * ReactDom 15.2.1v
 * ReactRouter 2.6.0v
-* ReactBootstrap: 0.30.0
+* ReactBootstrap: 0.30.0v
 * Redux 3.5.2v
 * ReactRedux 4.4.5v
 * React-Hot-Loader 1.3.0v
@@ -14,8 +17,8 @@
 * ES6 Support
 * Server-side render
 
-# Why React Basic Starter
-The lightweight react start, help you to start your project quickly.
+# Redux middleware
+* Redux Logger 2.6.1v
 
 # Installation
 ```
