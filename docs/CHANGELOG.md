@@ -1,3 +1,9 @@
+## v0.4.1
+
+> 2016-07-30
+
+- **Migrate**: Migrate `routes` to routes folder.
+
 ## v0.4.0
 
 > 2016-07-29
@@ -16,7 +22,7 @@
 
 > 2016-07-28
 
-- **Migrate**: webpack.dev.config migrate to server config file
+- **Migrate**: Migrate webpack.dev.config to config file in server folder
 - **Upgrade**: React Bootstrap upgrade v0.3.0-rc2 to v0.3.0
 - **Upgrade**: React Router upgrade v2.4.1 to v2.6.0
 - **Other**: start script modified (use node_modules babel-cli not global babel script)
