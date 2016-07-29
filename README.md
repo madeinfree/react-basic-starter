@@ -23,14 +23,9 @@ The lightweight react start, help you to start your project quickly.
 # Installation
 ```
 git clone https://github.com/madeinfree/react-basic-starter.git
-npm i
-npm start
-
-well done !
+npm i && npm start
 ```
 [http://localhost:16668](http://localhost:16668)
-
-# TODO
 
 # License
 MIT
