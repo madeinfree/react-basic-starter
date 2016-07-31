@@ -1,3 +1,10 @@
+## v0.4.2
+
+> 2016-07-31
+
+- **Update**: Update React and React Dom to 15.3.0v.
+
+
 ## v0.4.1
 
 > 2016-07-30
