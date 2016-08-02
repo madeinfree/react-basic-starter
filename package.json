@@ -4,8 +4,13 @@
   "description": "The very very basic reactjs starter",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ./src",
+    "test": "npm run eslint && npm run jest",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./src",
+    "jest": "./node_modules/jest/bin/jest.js",
     "start": "./node_modules/babel-cli/bin/babel-node.js ./server/webpack-server.js"
+  },
+  "jest": {
+    "automock": false
   },
   "repository": {
     "type": "git",
@@ -31,9 +36,10 @@
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.9.1",
+    "babel-jest": "^14.1.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
+    "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
     "eslint": "^2.11.1",
@@ -43,7 +49,9 @@
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1",
     "file-loader": "^0.8.5",
+    "jest": "^14.1.0",
     "react-hot-loader": "^1.3.0",
+    "react-test-renderer": "^15.3.0",
     "redux-logger": "^2.6.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
