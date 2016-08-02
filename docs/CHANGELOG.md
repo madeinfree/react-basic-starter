@@ -1,3 +1,10 @@
+## v0.4.21
+
+> 2016-08-02
+
+- **Update and BugFix**: Update React Bootstrap to v0.30.1 for React v15.3.0
+
+
 ## v0.4.2
 
 > 2016-07-31

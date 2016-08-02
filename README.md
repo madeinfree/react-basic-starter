@@ -9,7 +9,7 @@ The lightweight react start, help you to start your project quickly.
 * React 15.3.0v
 * ReactDom 15.3.0v
 * ReactRouter 2.6.0v
-* ReactBootstrap: 0.30.0v
+* ReactBootstrap: 0.30.1v
 * Redux 3.5.2v
 * ReactRedux 4.4.5v
 * React-Hot-Loader 1.3.0v
