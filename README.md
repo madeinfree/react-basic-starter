@@ -5,15 +5,15 @@
 The lightweight react start, help you to start your project quickly.
 
 # React Basic Starter
-* Node 6.0.0v
-* React 15.3.0v
-* ReactDom 15.3.0v
-* ReactRouter 2.6.0v
-* ReactBootstrap: 0.30.1v
-* Redux 3.5.2v
-* ReactRedux 4.4.5v
-* React-Hot-Loader 1.3.0v
-* eslint 2.11.1v
+* Node v6.0.0
+* React v15.3.2
+* ReactDom v15.3.2
+* ReactRouter v4.0.0-alpha.3
+* ReactBootstrap: v0.30.1
+* Redux v3.5.2
+* ReactRedux v4.4.5
+* React-Hot-Loader v1.3.0
+* eslint v2.11.1
 * ES6 Support
 * Server-side render
 

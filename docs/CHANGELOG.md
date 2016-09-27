@@ -1,3 +1,10 @@
+## v0.5.0
+
+> 2016-09-27
+
+- **Update**: Upgrade to use React Router v4.0.0-alpha.3
+- **Update**: Update React and React Dom to v15.3.2
+
 ## v0.4.21
 
 > 2016-08-02
