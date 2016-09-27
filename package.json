@@ -1,6 +1,6 @@
 {
   "name": "react-basic-starter",
-  "version": "0.4.21",
+  "version": "0.5.0",
   "description": "The very very basic reactjs starter",
   "main": "index.js",
   "scripts": {
