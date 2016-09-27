@@ -3,8 +3,12 @@ import React from 'react'
 import { render } from 'react-dom'
 
 // React Router
-import { Router, browserHistory } from 'react-router'
-import routes from './routes/'
+import { BrowserRouter, Match } from 'react-router'
+
+import Header from './container/common/header/header.react'
+import Footer from './container/common/footer/footer.react'
+import Welcome from './container/welcome/welcome.react'
+import Home from './container/home/home.react'
 
 // Redux
 import { Provider } from 'react-redux'
@@ -16,9 +20,14 @@ const store = configureStore()
 
 const App = () => (
   <Provider store={ store }>
-    <Router
-      history={ browserHistory }
-      routes={ routes } />
+    <BrowserRouter>
+      <div>
+        <Header />
+        <Match exactly pattern='/' component={ Welcome } />
+        <Match pattern='/home' component={ Home } />
+        <Footer />
+      </div>
+    </BrowserRouter>
   </Provider>
 )
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link, browserHistory } from 'react-router'
+import { Link } from 'react-router'
 
 import {
   Navbar,
@@ -18,9 +18,9 @@ const Header = () => (
         <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
-        <Nav>
-          <NavItem key={ 1 } onClick={ () => { browserHistory.push('home') } }>Home</NavItem>
-        </Nav>
+        <Navbar.Brand>
+          <Link to='/home'>Home</Link>
+        </Navbar.Brand>
         <Nav pullRight>
           <NavItem eventKey={ 1 } href='#'>Link Right</NavItem>
         </Nav>
