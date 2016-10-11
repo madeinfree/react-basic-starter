@@ -1,3 +1,9 @@
+## v0.5.1
+
+> 2016-10-07
+
+- **Feature**: Added react-dev-utils modules
+
 ## v0.5.0
 
 > 2016-09-27
