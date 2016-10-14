@@ -31,7 +31,8 @@
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
     "react-router": "^4.0.0-alpha.3",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "styled-components": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
