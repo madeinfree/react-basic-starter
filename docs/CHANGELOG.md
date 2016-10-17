@@ -1,3 +1,9 @@
+## v0.5.2
+
+> 2016-10-17
+
+- **Feature**: Added Styled Component modules
+
 ## v0.5.1
 
 > 2016-10-07
