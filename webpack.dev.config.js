@@ -3,24 +3,6 @@
 const path = require('path');
 const webpack = require('webpack');
 
-class BasicStarterPlugin {
-  apply(compiler) {
-    compiler.plugin('invalid', () => {
-      console.log('Compiling...');
-    });
-    compiler.plugin('done', (stats) => {
-      const message = stats.toJson({}, true)
-      message.errors.forEach(msg => {
-        console.log(msg
-          .replace('Module build failed:', '')
-          .replace('SyntaxError', '(句法錯誤) '))
-        console.log()
-      })
-      return
-    })
-  }
-}
-
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:16668',
@@ -59,7 +41,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new BasicStarterPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
 };
