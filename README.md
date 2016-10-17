@@ -13,9 +13,10 @@ The lightweight react start, help you to start your project quickly.
 * Redux v3.5.2
 * ReactRedux v4.4.5
 * React-Hot-Loader v1.3.0
+* Styled Component v1.0.6
 * eslint v2.11.1
 * ES6 Support
-* Server-side render
+* yarn
 
 # Redux middleware
 * Redux Logger 2.6.1v
