@@ -3,9 +3,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 import {
-  Navbar,
-  Nav,
-  NavItem
+  Navbar
 } from 'react-bootstrap'
 
 const Header = () => (
@@ -20,6 +18,9 @@ const Header = () => (
       <Navbar.Collapse>
         <Navbar.Brand>
           <Link to='/home'>Home</Link>
+        </Navbar.Brand>
+        <Navbar.Brand>
+          <Link to='/example'>Example</Link>
         </Navbar.Brand>
       </Navbar.Collapse>
     </Navbar>
