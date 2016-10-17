@@ -21,9 +21,6 @@ const Header = () => (
         <Navbar.Brand>
           <Link to='/home'>Home</Link>
         </Navbar.Brand>
-        <Nav pullRight>
-          <NavItem eventKey={ 1 } href='#'>Link Right</NavItem>
-        </Nav>
       </Navbar.Collapse>
     </Navbar>
   </div>
