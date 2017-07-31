@@ -44,6 +44,14 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({
       debug: true
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'vendor.js',
+      minChunks: function(module, count) {
+        const context = module.context
+        return context && context.indexOf('node_modules') !== -1
+      }
     })
   ]
 };
