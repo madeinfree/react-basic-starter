@@ -18,17 +18,18 @@ module.exports = {
   debug: true,
   devtool: '#eval-source-map',
   resolve: {
-    extensions: [ '', '.js', '.jsx' ]
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: [ 'react-hot', 'babel' ]
+        loaders: ['babel']
       },
       {
-        test: /\.css$/, loader: 'style-loader!css-loader'
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -40,7 +41,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
+  plugins: [new webpack.HotModuleReplacementPlugin()]
 };
