@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/madeinfree/react-basic-starter#readme",
   "dependencies": {
-    "react": "^15.6.1",
+    "react": "next",
     "react-bootstrap": "^0.31.1",
-    "react-dom": "^15.6.1",
+    "react-dom": "next",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.2",
     "redux": "^3.7.2",

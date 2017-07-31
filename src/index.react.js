@@ -10,6 +10,7 @@ import Footer from './container/common/footer/footer.react';
 import Welcome from './container/welcome/welcome.react';
 import Home from './container/home/home.react';
 import Example from './container/example/example.react';
+import Errors from './container/error/error.react';
 
 // Redux
 import { Provider } from 'react-redux';
@@ -27,6 +28,7 @@ const App = () =>
         <Route exact path="/" component={Welcome} />
         <Route path="/home" component={Home} />
         <Route path="/example" component={Example} />
+        <Route path="/error" component={Errors} />
         <Footer />
       </div>
     </Router>

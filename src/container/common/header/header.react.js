@@ -22,6 +22,9 @@ const Header = () => (
         <Navbar.Brand>
           <Link to='/example'>Example</Link>
         </Navbar.Brand>
+        <Navbar.Brand>
+          <Link to='/error'>Error</Link>
+        </Navbar.Brand>
       </Navbar.Collapse>
     </Navbar>
   </div>
