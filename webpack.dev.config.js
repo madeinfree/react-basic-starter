@@ -15,17 +15,16 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/build/'
   },
-  debug: true,
   devtool: '#eval-source-map',
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel']
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/,
@@ -41,5 +40,10 @@ module.exports = {
       }
     ]
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      debug: true
+    })
+  ]
 };
