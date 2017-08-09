@@ -5,10 +5,10 @@ import config from '../webpack/webpack.dev.config';
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
-  contentBase: './build',
+  contentBase: './develop',
   hot: true,
   historyApiFallback: true
-}).listen(16668, (err) => {
+}).listen(16668, err => {
   if (err) {
     return console.error(err);
   }

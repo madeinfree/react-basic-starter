@@ -4,20 +4,15 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: [
-    'webpack-dev-server/client?http://0.0.0.0:16668',
-    'webpack/hot/only-dev-server',
-    'react-dev-utils/webpackHotDevClient',
-    './src/index.react.js'
-  ],
+  entry: [ 'webpack-dev-server/client?http://0.0.0.0:16668', 'webpack/hot/only-dev-server', 'react-dev-utils/webpackHotDevClient', './src/index.react.js' ],
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'develop'),
     filename: 'bundle.js',
-    publicPath: '/build/'
+    publicPath: '/develop/'
   },
   devtool: '#eval-source-map',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: [ '.js', '.jsx' ]
   },
   module: {
     rules: [
@@ -48,9 +43,9 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       filename: 'vendor.js',
-      minChunks: function(module, count) {
-        const context = module.context
-        return context && context.indexOf('node_modules') !== -1
+      minChunks: module => {
+        const context = module.context;
+        return context && context.indexOf('node_modules') !== -1;
       }
     })
   ]
