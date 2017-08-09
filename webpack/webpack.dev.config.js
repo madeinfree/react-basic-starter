@@ -1,10 +1,10 @@
 /* eslint no-console: 0 */
-
 const path = require('path');
 const webpack = require('webpack');
+require('dotenv').config();
 
 module.exports = {
-  entry: [ 'webpack-dev-server/client?http://0.0.0.0:16668', 'webpack/hot/only-dev-server', 'react-dev-utils/webpackHotDevClient', './src/index.react.js' ],
+  entry: [ `webpack-dev-server/client?http://0.0.0.0:${process.env.APP_PORT}`, 'webpack/hot/only-dev-server', 'react-dev-utils/webpackHotDevClient', './src/index.react.js' ],
   output: {
     path: path.resolve(__dirname, 'develop'),
     filename: 'bundle.js',

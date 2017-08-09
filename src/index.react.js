@@ -20,16 +20,18 @@ import './lib/bootstrap/dist/bootstrap.min.css';
 const store = configureStore();
 
 const App = () =>
-  <Provider store={store}>
+  <Provider store={ store }>
     <Router>
       <div>
         <Header />
-        <Route exact path="/" component={Welcome} />
-        <Route path="/home" component={Home} />
-        <Route path="/example" component={Example} />
+        <Route exact path='/' component={ Welcome } />
+        <Route path='/home' component={ Home } />
+        <Route path='/example' component={ Example } />
         <Footer />
       </div>
     </Router>
   </Provider>;
 
 render(<App />, document.getElementById('app'));
+
+export default App;
