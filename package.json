@@ -18,7 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/madeinfree/react-basic-starter.git"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": "Whien_Liou",
   "license": "MIT",
   "bugs": {
@@ -26,6 +28,7 @@
   },
   "homepage": "https://github.com/madeinfree/react-basic-starter#readme",
   "dependencies": {
+    "compression-webpack-plugin": "^1.0.0",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
