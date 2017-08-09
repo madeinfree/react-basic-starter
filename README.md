@@ -21,12 +21,22 @@ The lightweight react start, help you to start your project quickly.
 # Redux middleware
 * Redux Logger 2.6.1v
 
-# Installation
+# Development
+
 ```
 git clone https://github.com/madeinfree/react-basic-starter.git
-npm i && npm start
+ln -s .envs/.dev.env .env
+yarn i && yarn start:dev
 ```
 [http://localhost:16668](http://localhost:16668)
+
+# Production
+
+```
+ln -s .envs/.prod.env .env
+yarn start:prod
+```
+[http://localhost:8080](http://localhost:8080)
 
 # License
 MIT
