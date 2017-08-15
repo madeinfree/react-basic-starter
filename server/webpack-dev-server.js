@@ -41,7 +41,7 @@ const parseDashboard = new ParseDashboard(
 app.set('view options', { layout: false });
 app.engine('html', require('ejs').renderFile);
 
-app.use('/parse', parse.app);
+app.use('/api/parse-server/v1', parse.app);
 app.use('/parse-dashboard', parseDashboard);
 app.use('/build', express.static(`${__dirname}/../build`));
 
