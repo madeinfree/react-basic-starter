@@ -20,7 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/madeinfree/react-basic-starter.git"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": "Whien_Liou",
   "license": "MIT",
   "bugs": {
@@ -32,6 +34,8 @@
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
+    "parse": "^1.10.0",
+    "parse-dashboard": "^1.1.0",
     "parse-server": "^2.5.3",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
