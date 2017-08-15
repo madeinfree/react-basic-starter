@@ -8,6 +8,7 @@
     "eslint": "./node_modules/eslint/bin/eslint.js ./src",
     "jest": "./node_modules/jest/bin/jest.js",
     "start:dev": "./node_modules/babel-cli/bin/babel-node.js ./server/webpack-dev-server.js",
+    "build:dev": "./node_modules/webpack/bin/webpack.js --color --watch --config ./webpack/webpack.dev.config.js",
     "start:prod": "yarn clear && ./node_modules/webpack/bin/webpack.js --config ./webpack/webpack.production.config.js && yarn server",
     "server": "node ./server/index.js",
     "clear": "rimraf ./build/*"
@@ -19,9 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/madeinfree/react-basic-starter.git"
   },
-  "keywords": [
-    "react"
-  ],
+  "keywords": ["react"],
   "author": "Whien_Liou",
   "license": "MIT",
   "bugs": {
