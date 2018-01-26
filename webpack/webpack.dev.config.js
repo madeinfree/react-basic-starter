@@ -4,15 +4,15 @@ const webpack = require('webpack');
 require('dotenv').config();
 
 module.exports = {
-  entry: [ `webpack-dev-server/client?http://0.0.0.0:${process.env.APP_PORT}`, 'webpack/hot/only-dev-server', 'react-dev-utils/webpackHotDevClient', './src/index.react.js' ],
+  entry: ['./src/index.react.js'],
   output: {
     path: path.resolve(__dirname, '../build'),
-    filename: 'bundle.js',
-    publicPath: '/build/'
+    filename: 'bundle.js'
+    // publicPath: '/build/'
   },
   devtool: '#eval-source-map',
   resolve: {
-    extensions: [ '.js', '.jsx' ]
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [
