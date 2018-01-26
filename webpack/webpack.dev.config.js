@@ -14,6 +14,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -35,17 +36,24 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          chunks: 'initial',
+          name: 'vendor',
+          enforce: true
+        }
+      }
+    }
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({
-      debug: true
-    }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor.js',
-      minChunks: module => {
-        const context = module.context;
-        return context && context.indexOf('node_modules') !== -1;
+      debug: true,
+      options: {
+        context: process.cwd()
       }
     })
   ]

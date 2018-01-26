@@ -2,15 +2,16 @@ const path = require('path');
 const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: [ './src/index.react.js' ],
+  entry: ['./src/index.react.js'],
   output: {
     path: path.resolve(__dirname, '../build'),
     filename: 'bundle.js',
-    publicPath: '../build/'
+    chunkFilename: '[name].js'
   },
+  mode: 'production',
   module: {
     rules: [
       {
@@ -20,10 +21,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader'
-        })
+        loaders: ['style-loader', 'css-loader']
+        // use: ExtractTextPlugin.extract({
+        //   fallback: 'style-loader',
+        //   use: 'css-loader'
+        // })
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -35,21 +37,30 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          chunks: 'initial',
+          name: 'vendor',
+          enforce: true
+        }
+      }
+    }
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production')
       }
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor.js',
-      minChunks: module => {
-        const context = module.context;
-        return context && context.indexOf('node_modules') !== -1;
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        context: process.cwd()
       }
     }),
-    new ExtractTextPlugin('style.css'),
+    // new ExtractTextPlugin('style.css'),
     new UglifyJSPlugin({
       ie8: false,
       ecma: 8,
