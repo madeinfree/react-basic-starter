@@ -34,7 +34,7 @@ ln -s .envs/.dev.env .env
 yarn i && yarn start:dev
 ```
 
-[http://localhost:16668](http://localhost:16668)
+[http://localhost:8081](http://localhost:8081)
 
 # Production
 
